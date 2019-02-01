@@ -10,3 +10,15 @@
     background: red;
     color: white;
 }
+.teal {
+  background: teal;
+  color: white;
+}
+.brown {
+  background: brown;
+  color: white;
+}
+
+.color-block {
+  padding: 20px;
+}
