@@ -1,22 +1,11 @@
-.blue {
-    background: blue;
-    color: white;
-}
-.green {
-    background: green;
-    color: white;
-}
-.red {
+.apple {
     background: red;
-    color: white;
 }
-.teal {
-  background: teal;
-  color: white;
+.mango {
+    background: orange;
 }
-.brown {
-  background: brown;
-  color: white;
+.blueberry {
+    background: blue;
 }
 
 .body {
@@ -27,8 +16,15 @@
     margin-left: -20px;
 }
 
-.add-body {
-    border: 2px solid white;
-    height: 100ps;
-    width: 100px;
+#add-body {
+    border: 2px solid rgb(180, 3, 3);
+    height: 100px;
+    width: 400px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#caterpillar-head {
+    display: inline-block;
 }
