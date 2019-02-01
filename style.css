@@ -1,7 +1,73 @@
 body {
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); 
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);     
 }
 
+h1 {
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+    font-size: 65px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(117, 24, 136);
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#whole-caterpillar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#food-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.food-choice {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.food-dance {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+#dance-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.add-body {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-top: 120px;
+    margin-left: -20px;
+    position: relative;
+    z-index: -1;
+}
+
+
+
+.transform {
+    transform: translateY(10px);
+}
+            
 .apple {
     background: red;
     color: white;
@@ -15,40 +81,4 @@ body {
 .grape {
     background: purple;
     color: white;
-}
-
-#caterpillar-body {
-    /* border: 2px solid red;
-    height: 150px;
-    width: 500px; */
-    display: inline-block;
-    position: relative;
-    margin-top: 5px;
-}
-
-.food-choice {
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    display: inline-block;
-}
-.add-body {
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    display: inline-block;
-    margin-top: 50px;
-    margin-right: -20px
-}
-
-.img {
-    position: relative;
-}
-
-.whole-caterpillar {
-    display: inline;
-}
-
-.transform {
-    transform: translateY(10px);
 }
