@@ -19,6 +19,16 @@
   color: white;
 }
 
-.color-block {
-  padding: 20px;
+.body {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: -20px;
+}
+
+.add-body {
+    border: 2px solid white;
+    height: 100ps;
+    width: 100px;
 }
