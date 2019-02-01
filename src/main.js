@@ -1,43 +1,47 @@
 const foodList = [
     'apple',
-    'mango',
-    'blueberry'
+    'banana',
+    'grape'
 ];
 
-const foodButtons = document.getElementById('food-buttons');
-const catBody = document.getElementById('add-body');
-
+const foodButton = document.getElementById('food-buttons');
 
 for(let i = 0; i < foodList.length; i++) {
     let food = foodList[i];
-    const foodChoice = document.createElement('button');
-    foodChoice.classList.add('food-choice', food);
-    foodChoice.textContent = food;
+    const chosenFood = document.createElement('button');
+    chosenFood.classList.add('food-choice', food);
+    chosenFood.textContent = food;
     
-    foodChoice.addEventListener('click', function() {
-        eat(food);
+    chosenFood.addEventListener('click', function() {
+        grow(food);
     });
-
-    foodButtons.appendChild(foodChoice);
+    
+    foodButton.appendChild(chosenFood);
+    
 }
 
+const danceButton = document.getElementById('dance-buttons');
 
-// for(let i = 0; i < foodList.length; i++) {
-//     let food = foodList[i];
-//     const addBody = document.createElement('button');
-//     addBody.classList.add('add-body', food);
-//     addBody.textContent = food;
+for(let i = 0; i < foodList.length; i++) {
+    let food = foodList[i];
+    const foodDance = document.createElement('button');
+    foodDance.classList.add('food-dance', food);
+    foodDance.textContent = food;
     
-//     // foodChoice.addEventListener('click', function() {
-//     //     eat(food);
-//     // });
+    foodDance.addEventListener('click', function() {
+        grow(food);
+    });
+    
+    danceButton.appendChild(foodDance);
+    
+}
 
-//     catBody.appendChild(addBody);
-// }
+const growBody = document.getElementById('caterpillar-body');
 
-function eat(food) {
-    const body = document.createElement('span');
-    body.classList.add('body', food);
-
-    catBody.appendChild(body);
+function grow(food) {
+    const eatFood = document.createElement('span');
+    eatFood.classList.add('add-body', food);
+    
+    growBody.appendChild(eatFood);
+    console.log('hi');
 }

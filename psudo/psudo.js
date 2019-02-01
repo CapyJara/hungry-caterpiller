@@ -8,7 +8,7 @@
 // for loop
 //     initiate let
 
-//     create element button
+//     initiate const to create element button
 //     add classes
 //     add text content 
 
