@@ -29,7 +29,8 @@ for(let i = 0; i < foodList.length; i++) {
     foodDance.textContent = food;
     
     foodDance.addEventListener('click', function() {
-        grow(food);
+        undoTransform();
+        bootyGiggle(food);
     });
     
     danceButton.appendChild(foodDance);
@@ -44,4 +45,21 @@ function grow(food) {
     
     growBody.appendChild(eatFood);
     console.log('hi');
+}
+
+function bootyGiggle(food) {
+    const selector = '.add-body.' + food;
+    const selectedBody = document.querySelectorAll(selector);
+
+    for(let i = 0; i < selectedBody.length; i++) {
+        selectedBody[i].classList.add('transform');
+    }
+}
+
+function undoTransform () {
+    const selectAll = document.querySelectorAll('.add-body');
+
+    for(let i = 0; i < selectAll.length; i++) {
+        selectAll[i].classList.remove('transform');
+    }
 }
